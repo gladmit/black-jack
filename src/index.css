@@ -1,13 +1,107 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    background:  #A7CECC;    
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  .main {    
+    width: 1200px;    
+    display: grid;
+    grid-template-columns: 200px auto;
+    width: 100%;
+    max-width: 1280px;
+    min-width: 50px;
+    margin: 0 auto;
+    }
+
+  .totalCounter {
+    padding-left: 20px;
+    padding-top: 20px;  
+    width: 250px;
+      
+  }
+  
+  .table {    
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .cardsPlayer {
+    display: flex;
+    justify-content: center;
+    height: 176px;
+    margin: 0 auto;    
+  }
+  
+  .card {
+    height: 176px;
+    width: 114px; 
+    background-color: white;
+    border-radius: 5%;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    border: 2px solid black;
+    cursor: grab;
+    position: relative;
+  }
+  
+  .card:hover {
+    background-color: Gainsboro;
+  }
+  
+  .cardName {   
+    text-align: center;  
+    
+  }
+  
+  .up {
+    line-height: 1%;
+    float: left;
+    padding-left: 10px;
+    
+  }
+  
+  .middle {
+    font-size: 40px;
+    line-height: 1%;
+    text-align: center;
+    padding-top: 46px;
+  }
+  
+  .down {
+    transform: scale(-1, -1);  
+    line-height: 1%;  
+    float: right;
+    padding-left: 10px;
+  }
+  
+  .btn {
+    padding: 0 40px;
+    margin: 0 20px;
+  }
+
+  .counter {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 460px) {
+
+    .main {
+      display: block;
+    }
+
+    .totalCounter {
+      padding-top: 0;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    .table {    
+      padding-top: 0;  
+    }
+
+    .counterText {
+      padding-left: 6px;
+    }
+  }
